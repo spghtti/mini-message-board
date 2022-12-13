@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul class="">
+      <% if (messages.length) { %>
+      <ul>
+        <% messages.forEach((message) => { %>
+        <li><%= message.user %>: <%= message.text %> (<%= message.added %>)</li>
+        <% }) %>
+      </ul>
+      <% } %>
+    </ul>
+  </body>
+</html>
