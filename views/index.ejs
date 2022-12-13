@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Mini msg</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1><%= title %></h1>
-    <ul class="">
+    <a href="/new">
+      <button class="go-to-submit">Submit a post</button>
+    </a>
+    <ul class="messages-list">
       <% if (messages.length) { %>
       <ul>
         <% messages.forEach((message) => { %>
-        <li><%= message.user %>: <%= message.text %> (<%= message.added %>)</li>
+        <li>
+          <span class="username"><%= message.user %>:</span> "<%= message.text
+          %>""
+          <span class="date">(<%= message.added %>)</span>
+        </li>
         <% }) %>
       </ul>
       <% } %>

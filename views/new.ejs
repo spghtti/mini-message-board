@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submit</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form class="new-message-form" method="POST" action="/new">
+      <div class="new-message-form-line">
+        <label for="nameText">Name:</label>
+        <input
+          id="nameText"
+          type="text"
+          minlength="3"
+          maxlength="30"
+          required
+          placeholder="Edward Elric"
+          name="nameText"
+        />
+      </div>
+      <div class="new-message-form-line">
+        <label for="messageText">Message:</label>
+        <textarea
+          id="messageText"
+          name="messageText"
+          required
+          rows="10"
+          cols="33"
+          minlength="3"
+          maxlength="300"
+          placeholder="How's it going, world?"
+        ></textarea>
+      </div>
+      <input type="submit" value="Send" />
+    </form>
+  </body>
+</html>

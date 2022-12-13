@@ -1,8 +1,31 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+textarea {
+  resize: none;
+  columns: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.new-message-form-line {
+  margin: 10px;
+}
+.new-message-form-line > label {
+  display: flex;
+  padding-right: 10px;
+  margin-bottom: auto;
+}
+.username {
+  font-weight: bold;
+}
+.date {
+  display: flex;
+  color: grey;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: 0.75rem;
 }
